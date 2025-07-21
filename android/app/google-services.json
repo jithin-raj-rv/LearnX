@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "438106723625",
+    "project_id": "learnx-18db3",
+    "storage_bucket": "learnx-18db3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438106723625:android:cc2eb76c8a16e48a755338",
+        "android_client_info": {
+          "package_name": "com.example.learnx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5EeV6FUIDKvQLxX5M2jgsb-1Zto0484w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -64,6 +64,7 @@ void updateTimeSpent() {
       Get.snackbar("Congrats", "You have completed the quiz!");
       homeController.goToFinishScreen();
       Get.toNamed("/home");
+      updateTimeSpent();
     }
   }
 

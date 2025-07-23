@@ -7,7 +7,7 @@ class Longbuttonnobg extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 25, right: 25, bottom: 10),
+      padding: const EdgeInsets.only(left: 25, right: 25, bottom: 25),
       child: ElevatedButton(onPressed:onPressed,
       style: ElevatedButton.styleFrom(
             backgroundColor: Theme.of(context).colorScheme.tertiary, // Use primary color from theme

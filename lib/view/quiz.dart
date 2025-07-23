@@ -11,6 +11,7 @@ class Quiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final QuizController quizController = Get.put(QuizController());
+    int error=0;
     return Scaffold(
       appBar: AppBar(
         leading: Padding(
@@ -19,6 +20,7 @@ class Quiz extends StatelessWidget {
             icon: Icon(Icons.arrow_back,size: 22.5,),
             onPressed: () {
               Navigator.of(context).pop();
+              Get.delete<QuizController>();
             },
           ),
         ),
@@ -51,11 +53,10 @@ class Quiz extends StatelessWidget {
               children: [
                 // Margin at the top
                 Divider(
-                height: 25,
+                height: 45,
                 color: Theme.of(context).colorScheme.primary,
                 thickness: 4,
               ),
-          
               Quizmodel(),
               // Explain to the user about drag and drop feature.
               Howto(),
@@ -82,8 +83,10 @@ class Quiz extends StatelessWidget {
                   quizController.nextPage();
                   quizController.filledAnswer.clear();
                 } else {
-                  Get.snackbar("Error", "Please fill all the blanks before proceeding.");
-                  print(quizController.filledAnswer);
+                  if (error < 3) {
+                    Get.snackbar("Error", "Please fill all the blanks before proceeding.");
+                    error++;
+                  }
                 }
               },),
             ],

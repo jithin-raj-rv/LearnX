@@ -15,7 +15,7 @@ class Quizmodel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final QuizController quizController = Get.put(QuizController());
+    final QuizController quizController = Get.find<QuizController>();
     
     
     // validation to put the value In Blank Space
@@ -44,7 +44,7 @@ class Quizmodel extends StatelessWidget {
                         TextSpan(text: parts[i]),
                         if ( i < parts.length - 1)
                         WidgetSpan(
-                          child: (i < filled.length && filled[i].isNotEmpty && filled [i] != "____") ? Text(filled[i]) : HintTarget(index: i,text: "____",),
+                          child: (i < filled.length && filled[i].isNotEmpty && filled [i] != "____") ? Text(filled[i]) : HintTarget(index: i,text: "_____________",),
                         ),
                         ]
                       ],
@@ -87,7 +87,15 @@ class Quizmodel extends StatelessWidget {
         ),
     
         // input text field to be inserted
-        Answertextfield(hint: " Type your answer here", tittle: "Or type your answer:", textFieldIcon:Icon(Icons.done)),
+        Answertextfield(hint: " Type your answer here", tittle: "Or type your answer:", textFieldIcon:Icon(Icons.done),
+          onSubmitted: () {
+           quizController.textFieldOnSubmitted();
+          },
+          onTap: (){
+            quizController.textFieldOnSubmitted();
+          },
+          controller: quizController.answerController,
+        ),
 
       ],
     );

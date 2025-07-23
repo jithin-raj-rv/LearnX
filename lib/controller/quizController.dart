@@ -1,3 +1,4 @@
+import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:learnx/controller/HomeScreenController.dart';
 import 'package:learnx/data/questions.dart';
@@ -15,6 +16,7 @@ class QuizController extends GetxController {
   List<FillInTheBlankQuestion> questions = QuestionBank[0].question;
 // clock to track time spent on quiz
   late final DateTime startTime;
+  final TextEditingController answerController = TextEditingController();
 
   @override
   void onInit() {
@@ -89,6 +91,22 @@ class QuizController extends GetxController {
     questions = QuestionBank[index].question;
   }
 
+  void textFieldOnSubmitted() {
+     final question = questions[pagenumber.value];
+     filledAnswer.length < question.correctAnswers.length && answerController.text.trim().isNotEmpty?filledAnswer.add(answerController.text.trim()):
+            {answerController.text.trim().isEmpty? Get.snackbar("Error", "Please enter an answer!"):
+            null,
+            };
+            if(filledAnswer.length == questions[pagenumber.value].correctAnswers.length && !filledAnswer.contains("____")){
+                  validateAnswers();
+                  // NO notification is better I guess...
+                  // Get.snackbar("Oops", "You have already filled all blanks!,Going to next page..."),
+                  nextPage();
+                  filledAnswer.clear();
+                }
+            answerController.clear();
+    }
+  }
 
 // for text field
 // void onAnswerChanged(String value, int index) {
@@ -104,4 +122,3 @@ class QuizController extends GetxController {
 //     QuestionBank[0].question[0].correctAnswers.length,
 //     (index) => TextEditingController(),
 //   );
-}

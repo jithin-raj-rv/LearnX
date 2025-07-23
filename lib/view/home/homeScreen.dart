@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_navigation/get_navigation.dart';
-import 'package:get/state_manager.dart';
 import 'package:learnx/controller/HomeScreenController.dart';
 import 'package:learnx/view/home/body/finishScreen.dart';
 import 'package:learnx/view/home/body/takeQuiz.dart';

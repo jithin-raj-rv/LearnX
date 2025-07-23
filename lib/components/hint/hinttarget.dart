@@ -18,10 +18,12 @@ class HintTarget extends StatelessWidget {
             onLeave: (data) => quizController.onDragExited(),
             builder: (context, candidateData, rejectedData) {
               return Container(
-                height: 25,
+                alignment: Alignment.bottomCenter,
+                height: 30,
+                width: 100,
                 // Text to input the answer
                 child: Text(text, style: TextStyle(
-                  color: Colors.white,
+                  color: Theme.of(context).colorScheme.primary,
                   fontWeight: FontWeight.bold,
                 )),
               );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:learnx/components/achivements/AchievementIcons.dart';
+import 'package:learnx/components/Icons/AchievementIcons.dart';
 import 'package:learnx/controller/quizController.dart';
 
 class Achievements extends StatelessWidget {
@@ -29,7 +29,7 @@ class Achievements extends StatelessWidget {
             children: [
               score > 14 ? const AchievementIcons(icontext: "images/Lightning.png",description: "Fast Learner",iconSize: 80,):Container(),
               time.inMinutes < 1 ? const AchievementIcons(icontext: "images/fire.png",description: "On Fire",):Container(),
-              score > totalAnswers ? const AchievementIcons(icontext: "images/star.png",description: "Perfect Score",):Container(),
+              score > totalAnswers/4 ? const AchievementIcons(icontext: "images/star.png",description: "Perfect Score",):Container(),
             ],
           ),
         ),

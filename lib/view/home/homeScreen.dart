@@ -20,9 +20,9 @@ class Homescreen extends StatelessWidget {
             , color: Theme.of(context).primaryColor,),
         ),
           actions: [
-            // Theme toggle button
+            // Theme toggle button(validation for final page is removed because bug fixed...)
             Obx(
-              () => homeController.currentIndex.value == 1? Container() : IconButton(
+              () => homeController.currentIndex.value == 2? Container() : IconButton(
                 icon: Icon(
                   Theme.of(context).brightness == Brightness.dark
                       ? Icons.light_mode
@@ -51,7 +51,6 @@ class Homescreen extends StatelessWidget {
               ),
             ),
           ],
-
       ),
       body: Obx(() {
       switch (homeController.currentIndex.value) {

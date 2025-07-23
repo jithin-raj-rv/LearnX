@@ -23,9 +23,15 @@ class QuizController extends GetxController {
     super.onInit();
     startTime = DateTime.now();
   }
-
-  Duration get timeSpent => DateTime.now().difference(startTime);
+  Duration timeSpent = Duration.zero;
 // end of clock
+int t=0;
+void updateTimeSpent() {
+  if (t ==0){
+    timeSpent = DateTime.now().difference(startTime);
+    t++;
+  }
+  }
 
   void onDragAccepted(String answer, int index) {
     // Logic to print answer not one by one
@@ -81,9 +87,13 @@ class QuizController extends GetxController {
     // Show score
   }
   // Add up answers loop
+  int i=0;
   int totalAnswers(){
+    if (i ==0){
         for(int i=0; i<questions.length;i++){
       totalAnswer += questions[i].correctAnswers.length;
+    }
+    i++;
     }
     return totalAnswer;
   }
@@ -98,10 +108,10 @@ class QuizController extends GetxController {
             null,
             };
             if(filledAnswer.length == questions[pagenumber.value].correctAnswers.length && !filledAnswer.contains("____")){
-                  validateAnswers();
                   // NO notification is better I guess...
                   // Get.snackbar("Oops", "You have already filled all blanks!,Going to next page..."),
                   nextPage();
+                  validateAnswers();
                   filledAnswer.clear();
                 }
             answerController.clear();

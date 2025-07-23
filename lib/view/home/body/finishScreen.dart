@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:learnx/controller/HomeScreenController.dart';
 import 'package:learnx/controller/quizController.dart';
-import 'package:learnx/components/achivements/achievements.dart';
-import 'package:learnx/components/score/OverallScore.dart';
+import 'package:learnx/model/achievements.dart';
+import 'package:learnx/model/OverallScore.dart';
 import 'package:learnx/components/Icons/callLogo.dart';
 import 'package:learnx/components/button/longButton.dart';
 import 'package:learnx/components/button/longButtonNoBg.dart';

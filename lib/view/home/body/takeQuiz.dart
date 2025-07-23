@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:learnx/components/button/button2.dart';
-import 'package:learnx/components/button/longButton.dart';
 import 'package:learnx/controller/quizController.dart';
 import 'package:learnx/model/questionModel.dart';
 

@@ -5,6 +5,7 @@ import 'package:learnx/controller/quizController.dart';
 
 class OverallScore extends StatelessWidget {
   const OverallScore({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
@@ -12,6 +13,7 @@ class OverallScore extends StatelessWidget {
     int score= quizController.result.value;
     int totalAnswers = quizController.totalAnswers();
     Duration time = quizController.timeSpent;
+    quizController.updateTimeSpent();
     String formattedTime = "${time.inMinutes.remainder(60).toString().padLeft(2, '0')}:${time.inSeconds.remainder(60).toString().padLeft(2, '0')}";
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25,vertical: 20),

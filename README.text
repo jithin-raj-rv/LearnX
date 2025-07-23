@@ -23,41 +23,41 @@ This project follows the **MVC (Model-View-Controller)** pattern with **GetX** s
 ### Architecture Overview
 
 lib/ 
-├── core/                          # Core configuration 
-│ ├── theme.dart                   # App theming 
-│ ├── routes.dart                  # Navigation routes 
-│ └── firebase_options.dart        # Firebase Options
+├── core/                        # Core configuration 
+│ ├── theme.dart                 # App theming 
+│ ├── routes.dart                # Navigation routes 
+│ └── firebase_options.dart      # Firebase Options
 │
-├── model/                         # Data models and business logic 
-│ ├── questionModel.dart           # Quiz data structure 
-│ ├── quiz_model.dart              # Quiz UI model 
-│ └── loginmodel.dart              # Authentication UI model 
-│ └── achievements.dart            # Achievement UI model
-│ └── OverallScore.dart            # OverallScore UI model
+├── model/                       # Data models and business logic 
+│ ├── questionModel.dart         # Quiz data structure 
+│ ├── quiz_model.dart            # Quiz UI model 
+│ └── loginmodel.dart            # Authentication UI model 
+│ └── achievements.dart          # Achievement UI model
+│ └── OverallScore.dart          # OverallScore UI model
 │
-├── view/                          # User Interface (Screens) 
-│ ├── Auth.dart                    # Authentication screen 
-│ ├── quiz.dart                    # Quiz interface 
-│ ├── splashScreen.dart            # App startup 
-│ └── home/                        # Home section screens 
+├── view/                        # User Interface (Screens) 
+│ ├── Auth.dart                  # Authentication screen 
+│ ├── quiz.dart                  # Quiz interface 
+│ ├── splashScreen.dart          # App startup 
+│ └── home/                      # Home section screens 
 │
-├── controller/                    # Business logic and state management 
-│ ├── quizController.dart          # Quiz state management 
-│ ├── HomeScreenController.dart    # Home navigation 
-│ └── auth controllers/            # Authentication logic 
+├── controller/                  # Business logic and state management 
+│ ├── quizController.dart        # Quiz state management 
+│ ├── HomeScreenController.dart  # Home navigation 
+│ └── auth controllers/          # Authentication logic 
 │
-├── components/                    # Reusable UI components 
-│ ├── button/                      # Custom buttons 
-│ ├── hint/                        # Quiz hint components 
-│ ├── score/                       # Score display components 
-│ └── text field/                  # Input components 
-│ └── container                    # To show user information
-│ └── divider                      # basic divider
-│ └── icons                        # Logo Icon field & basic Icons
-│ └── lottie                       # Animations like loading
+├── components/                  # Reusable UI components 
+│ ├── button/                    # Custom buttons 
+│ ├── hint/                      # Quiz hint components 
+│ ├── score/                     # Score display components 
+│ └── text field/                # Input components 
+│ └── container                  # To show user information
+│ └── divider                    # basic divider
+│ └── icons                      # Logo Icon field & basic Icons
+│ └── lottie                     # Animations like loading
 │
-└── data/                          # Static data and question banks 
-  └── questions.dart               # Quiz questions database
+└── data/                        # Static data and question banks 
+  └── questions.dart             # Quiz questions database
 
 
 

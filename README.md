@@ -1,4 +1,177 @@
 # LearnX
-A Interactive Learning App
 
-In this App we can do interactive quiz
+A Interactive Learning App for Flutter that provides engaging fill-in-the-blank quizzes with drag-and-drop functionality.
+
+#Login
+-> Email:admin@gmail.com
+-> Password:admin@123
+
+## Features
+
+- **Interactive Quizzes**: Fill-in-the-blank questions with drag-and-drop interface
+- **Multiple Quiz Categories**: Grammar Skills, Animal Facts, Solar System, and more
+- **Real-time Scoring**: Track progress and performance
+- **Achievement System**: Unlock achievements based on performance
+- **Firebase Authentication**: Secure user login and registration
+- **Responsive Design**: Optimized for different screen sizes
+- **Dark/Light Theme**: System-based theme switching
+
+## Architecture
+
+This project follows the **MVC (Model-View-Controller)** pattern with **GetX** state management, providing a clean and scalable architecture:
+
+### Architecture Overview
+
+lib/ 
+├── core/                                           # Core configuration 
+│ ├── theme.dart                                    # App theming 
+│ ├── routes.dart                                   # Navigation routes 
+│ └── firebase_options.dart                         # Firebase Options
+│
+├── model/                                          # Data models and business logic 
+│ ├── questionModel.dart                            # Quiz data structure 
+│ ├── quiz_model.dart                               # Quiz UI model 
+│ └── loginmodel.dart                               # Authentication UI model 
+│ └── achievements.dart                             # Achievement UI model
+│ └── OverallScore.dart                             # OverallScore UI model
+│
+├── view/                                           # User Interface (Screens) 
+│ ├── Auth.dart                                     # Authentication screen 
+│ ├── quiz.dart                                     # Quiz interface 
+│ ├── splashScreen.dart                             # App startup 
+│ └── home/                                         # Home section screens 
+│
+├── controller/                                     # Business logic and state management 
+│ ├── quizController.dart                           # Quiz state management 
+│ ├── HomeScreenController.dart                     # Home navigation 
+│ └── auth controllers/                             # Authentication logic 
+│
+├── components/                                     # Reusable UI components 
+│ ├── button/                                       # Custom buttons 
+│ ├── hint/                                         # Quiz hint components 
+│ ├── score/                                        # Score display components 
+│ └── text field/                                   # Input components 
+│ └── container                                     # To show user information
+│ └── divider                                       # basic divider
+│ └── icons                                         # Logo Icon field & basic Icons
+│ └── lottie                                        # Animations like loading
+│
+└── data/                                           # Static data and question banks 
+  └── questions.dart                                # Quiz questions database
+
+
+
+### Key Architecture Patterns
+
+1. **MVC Pattern**:
+   - **Model**: Data structures and business logic 
+
+        [`questionModel.dart`] => (lib/model/questionModel.dart) directory
+        [`quiz_model.dart`]    => (lib/model/quiz_model.dart) directory
+
+   - **View**: UI screens and components 
+
+        [`view/`]              => (lib/view/) directory
+
+   - **Controller**: State management and business logic 
+
+        [`controller/`]        => (lib/controller/) directory
+
+2. **GetX State Management**:
+
+   - **Reactive Programming**: Uses `Rx` variables for reactive UI updates
+   - **Dependency Injection**: Controllers are injected using `Get.put()` and `Get.find()`
+   - **Navigation**: Route management through 
+
+       [`appRoutes`]           => (lib/core/routes.dart) directory
+
+3. **Component-Based Architecture**:
+
+   - Reusable UI components in 
+
+       [`components/`]         => (lib/components/) directory
+
+   - Modular design for maintainability and reusability
+
+4. **Firebase Integration**:
+
+   - Authentication service in 
+
+       [`auth_controller.dart`] =>(lib/controller/auth controllers/auth_controller.dart)
+
+   - Configuration in 
+
+       [`firebase_options.dart`](lib/core/firebase_options.dart)
+
+### State Management Flow
+ ┌────────────────────────────────────────┐
+User → Interaction → Controller → Model → View Update ↑ ↓ 
+           └──────── Reactive Updates ←───────────┘
+
+- **Controllers** manage application state using GetX reactive variables
+- **Models** define data structures and business rules
+- **Views** automatically update when observable state changes
+- **Components** are reusable across different screens
+
+## Getting Started
+
+### Prerequisites
+
+- Flutter SDK (>=3.0.0)
+- Dart SDK (>=3.0.0)
+- Firebase account for authentication
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd learnx
+2. Install dependencies:
+    flutter pub get
+3. Configure Firebase:
+     *Create a Firebase project
+     *Add your app to Firebase
+     *Download and replace firebase_options.dart
+4. Run the app:
+    flutter run
+
+### Dependencies
+
+#Key packages used in this project:
+
+GetX: State management and navigation
+Firebase Auth: User authentication
+Lottie: Animations
+Shared Preferences: Local data storage (for remember me function // not implemented yet because no logout function)
+
+See pubspec.yaml for complete dependencies list.
+
+### Project Structure
+-> Core Components
+main.dart: App entry point with Firebase initialization
+theme.dart: Responsive theming system
+routes.dart: Navigation configuration
+
+-> Controllers
+QuizController: Manages quiz state, scoring, and navigation
+HomeController: Controls home screen navigation
+LoginController: Handles authentication
+Key Features Implementation
+Drag & Drop: Implemented in HintButton and HintTarget
+Quiz Logic: Centralized in QuizController
+Responsive UI: Handled by AppTheme.responsiveTextTheme()
+
+### Contributing
+Fork the repository
+Create a feature branch
+Follow the existing architecture patterns
+Add components to appropriate directories
+Submit a pull request
+
+License
+This project is licensed under Community Common Attribution.
+© 2025 LearnX. All rights reserved.
+
+
+This README provides a comprehensive overview of your project's architecture, highlighting the MVC pattern with GetX state management, the modular component structure, and clear explanations of how different parts of the application work...

@@ -20,11 +20,11 @@ To test the application quickly, use the following administrator credentials:
 ### Screenshots
 <table>
   <tr>
-    <td align="center" width="33%">
-      <img src="https://github.com/user-attachments/assets/43817234-2ac9-49cd-990f-56f96c074af6" alt="Redbull Screen 1" width="100%"/>
+     <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/c1cfe6d9-28fd-421d-8dcb-a760e0f8a4a3" alt="Redbull Screen 2" width="100%"/>
     </td>
     <td align="center" width="33%">
-      <img src="https://github.com/user-attachments/assets/c1cfe6d9-28fd-421d-8dcb-a760e0f8a4a3" alt="Redbull Screen 2" width="100%"/>
+      <img src="https://github.com/user-attachments/assets/43817234-2ac9-49cd-990f-56f96c074af6" alt="Redbull Screen 1" width="100%"/>
     </td>
     <td align="center" width="33%">
       <img src="https://github.com/user-attachments/assets/d60bbcd6-4ded-41ee-99bf-18f51ef92ced" alt="Redbull Screen 3" width="100%"/>

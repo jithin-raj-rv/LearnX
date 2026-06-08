@@ -170,7 +170,7 @@ Key packages powering this application:
 
 ## 🧠 My Learning Journey
 
-LearnX was built as a personal playground to level up my Flutter skills rather than a production-scale application. Building this app was a fantastic hands-on experience!
+LearnX was built as a personal playground to level up my Flutter skills rather than a production-scale application. Building this app was a fantastic hands-on experience! You can clone this repository, and use this project as you like...
 
 Here are the biggest takeaways from this project:
 

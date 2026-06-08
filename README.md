@@ -25,10 +25,6 @@ To test the application quickly, use the following administrator credentials:
     </td>
       <td align="center" width="33%">
       <img src="https://github.com/user-attachments/assets/d33c116b-4de7-4ce7-97e0-fb2102e29198" alt="Redbull Screen 4" width="100%"/>
-    </td>
-     <td align="center" width="33%">
-      <img src="https://github.com/user-attachments/assets/d60bbcd6-4ded-41ee-99bf-18f51ef92ced" alt="Redbull Screen 3" width="100%"/>
-    </td>
     <td align="center" width="33%">
       <img src="https://github.com/user-attachments/assets/43817234-2ac9-49cd-990f-56f96c074af6" alt="Redbull Screen 1" width="100%"/>
     </td>
@@ -36,6 +32,10 @@ To test the application quickly, use the following administrator credentials:
   <tr>
     <td align="center" width="33%">
       <img src="https://github.com/user-attachments/assets/284d3c50-d723-45a9-b1ed-bcd229a117e7" alt="Redbull Screen 6" width="100%"/>
+    </td>
+    </td>
+     <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/d60bbcd6-4ded-41ee-99bf-18f51ef92ced" alt="Redbull Screen 3" width="100%"/>
     </td>
   </tr>
 </table>

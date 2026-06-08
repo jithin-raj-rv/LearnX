@@ -15,6 +15,46 @@ To test the application quickly, use the following administrator credentials:
 
 ---
 
+## 🎥 App Showcase & Screenshots
+
+### Screenshots
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/43817234-2ac9-49cd-990f-56f96c074af6" alt="Redbull Screen 1" width="100%"/>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/c1cfe6d9-28fd-421d-8dcb-a760e0f8a4a3" alt="Redbull Screen 2" width="100%"/>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/d60bbcd6-4ded-41ee-99bf-18f51ef92ced" alt="Redbull Screen 3" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/d33c116b-4de7-4ce7-97e0-fb2102e29198" alt="Redbull Screen 4" width="100%"/>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/232fcbc8-94e5-4051-a755-ab80ed8c91c2" alt="Redbull Screen 5" width="100%"/>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://github.com/user-attachments/assets/284d3c50-d723-45a9-b1ed-bcd229a117e7" alt="Redbull Screen 6" width="100%"/>
+    </td>
+  </tr>
+</table>
+
+### Demo Video
+
+<table>
+  <tr>
+<p align="center">
+  <video src="https://github.com/user-attachments/assets/4cb5fd36-855e-4a22-be41-32cd76b8940d" width="400" controls></video>
+</p>
+  </tr>
+</table>
+
+---
+
 ## ✨ Features
 
 * **Interactive Quizzes:** Engaging fill-in-the-blank questions utilizing a smooth drag-and-drop interface.
